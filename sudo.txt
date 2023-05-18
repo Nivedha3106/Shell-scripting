@@ -1,0 +1,15 @@
+Explore sudo su, and demonstrate its usage. Also Explain the difference between sudo su and sudo su -
+
+sudo: 
+   allows a user to execute commands with the privileges of another user, typically the root user.
+
+su: which stands for "substitute user," is used to switch to another user account.
+
+sudo su :
+  -> allows you to switch to the root user's account without changing the environment variables to those of the root user.
+  -> useful when want to retain the current environment variables.
+  -> requires authentication with password.
+
+sudo su - :
+   -> not only switch to the root user's account but also inherit the root user's environment variables.
+   -> sudo su - is useful when need to clean environment as the root user
